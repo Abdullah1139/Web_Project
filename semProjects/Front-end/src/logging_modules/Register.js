@@ -64,7 +64,7 @@ const Registration = () => {
           name="name"
           placeholder="Name"
           value={name}
-          onChange={(e)=>handleChange(e)}
+          onChange={(e)=>handleNameChange(e)}
           required
         />
         <input
@@ -73,7 +73,7 @@ const Registration = () => {
           name="email"
           placeholder="Email"
           value={email}
-          onChange={(e)=>handleChange(e)}
+          onChange={(e)=>handleEmailChange(e)}
           required
         />
         <input
@@ -82,7 +82,7 @@ const Registration = () => {
           name="password"
           placeholder="Password"
           value={password}
-          onChange={(e)=>handleChange(e)}
+          onChange={(e)=>handlePasswordChange(e)}
           required
         />
         <input
@@ -91,7 +91,7 @@ const Registration = () => {
           name="confirmPassword"
           placeholder="Confirm Password"
           value={confirmPassword}
-          onChange={(e)=>handleChange(e)}
+          onChange={(e)=>handleConfirmPasswordChange(e)}
           required
         />
         {passwordError && <p>{passwordError}</p>}
